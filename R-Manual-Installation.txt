@@ -1,0 +1,81 @@
+
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+
+add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/'
+
+apt-get update
+
+apt-get install r-base
+
+R --version
+
+wget http://download1.rstudio.org/rstudio-1.0.153-i386.deb
+
+gdebi -n rstudio-1.0.153-i386.deb
+
+
+
+mkdir -p /data/Rpackages
+
+
+nano .Renviron
+
+R_LIBS=/data/Rpackages/
+
+
+nano .Rprofile
+
+
+cat(".Rprofile: Setting UK repositoryn")
+r = getOption("repos")
+# hard code the UK repo for CRAN
+r["CRAN"] = "http://cran.uk.r-project.org"
+options(repos = r)
+rm(r)
+
+
+apt-get install -y --no-install-recommends libxml2-dev
+
+R
+
+install.packages("tidyverse") - OK
+
+install.packages("knitr") - OK
+
+install.packages("kableExtra") - OK
+
+install.packages("infotheo") - OK
+
+install.packages("stringr") - OK
+
+install.packages("factoextra") - OK
+
+install.packages("gridExtra") - OK
+
+install.packages("data.table") - OK
+
+install.packages("entropy") - OK
+
+install.packages("reshape2") - OK
+
+install.packages("dbscan") - OK
+
+install.packages("fpc") - OK
+
+install.packages("stylo") - OK
+
+
+https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image
+
+
+
+
+
+
+
+
+
+
+
+
+
