@@ -7,7 +7,7 @@ Here we outline how to use the rstudio image,  which enables you to use [RStudio
 
 Install the most current version of `docker` software [as indicated for your platform](https://docs.docker.com/installation). 
 
-_**Note**: RStudio requires docker version `>= 1.2`_  Some Linux repositories may have only older versions available, to ensure you get the latest version run `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`. Fresh installs of the Docker Toolkit on Mac/Windows following the instructions above should be fine.  
+_**Note:** RStudio requires docker version `>= 1.2`_  Some Linux repositories may have only older versions available, to ensure you get the latest version run `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`. Fresh installs of the Docker Toolkit on Mac/Windows following the instructions above should be fine.  
 
 Linux users can just use `http://localhost` or the IP address of their remote server.  
 
@@ -17,7 +17,7 @@ Linux users can just use `http://localhost` or the IP address of their remote se
 ```bash
 docker run -d -p 8787:8787 -e PASSWORD=<password> --name rstudio yi/r-studio:0.0 # replace <password> with a password of your choice
 ```
-_**Note**: Password cannot be same as username, `rstudio` docker will fail on run command in this case_
+_**Note:** Password cannot be same as username, `rstudio` docker will fail on run command in this case_
 
 Linux users might want to add their user to the `docker` group to avoid having to use `sudo`.  To do so, just run `sudo usermod -a -G docker <username>`. You may need to login again to refresh your group membership.
 
@@ -66,7 +66,7 @@ You can now open a shell from RStudio (see the "Tools" menu), or directly from t
 
     system("sudo apt-get install -y libgsl0-dev")
 
-_**Note** that the `system()` commands are non-interactive, hence the `-y` flag to accept the install._
+_**Note:** The `system()` commands are non-interactive, hence the `-y` flag to accept the install._
 
 In the other hand you can become `root` if you are running docker as `rstudio` user by running `sudo su` command in the terminal session.
 
@@ -92,7 +92,7 @@ sudo usermod -aG staff <username>
 
 to interactively create each new user and password (adding user contact details in the prompt is optional).  You can then exit the prompt (type `exit`); your RStudio container is still running and now has the new users added.  
 
-**Note**: you should not link any shared volumes to the host on a container in which you are configuring multiple users.
+**Note:** you should not link any shared volumes to the host on a container in which you are configuring multiple users.
 
 ## Dependencies external to the R system
 
