@@ -119,5 +119,7 @@ Once you are logged into web interface, you can add R packages by issuing follow
 ### Original WIKI and repos are here:
 
 [WIKI](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
+
 [Rocker-Versioned](https://github.com/rocker-org/rocker-versioned)
+
 [Rocker](https://github.com/rocker-org/rocker)
