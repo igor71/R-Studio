@@ -117,6 +117,7 @@ Once you are logged into web interface, you can add R packages by issuing follow
 `install.packages("<package-name"), e.g install.packages("tidyverse")`
 
 ### Original WIKI and repos are here:
-https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image
-https://github.com/rocker-org/rocker-versioned
-https://github.com/rocker-org/rocker
+
+[WIKI](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
+[Rocker-Versioned](https://github.com/rocker-org/rocker-versioned)
+[Rocker](https://github.com/rocker-org/rocker)
