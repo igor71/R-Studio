@@ -34,11 +34,12 @@ options(repos = r)
 rm(r)
 
 
-apt-get install -y --no-install-recommends libxml2-dev
+sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libz-dev
 
 R
 
-install.packages("tidyverse") - OK
+install.packages("tidyverse", dependencies=TRUE) - OK
+
 
 install.packages("knitr") - OK
 
