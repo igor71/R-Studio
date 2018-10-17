@@ -66,7 +66,7 @@ You can now open a shell from RStudio (see the "Tools" menu), or directly from t
 
     system("sudo apt-get install -y libgsl0-dev")
 
-_Note that the `system()` commands are non-interactive, hence the `-y` flag to accept the install.)_
+_Note that the `system()` commands are non-interactive, hence the `-y` flag to accept the install._
 
 In the other hand you can become `root` if you are running docker as `rstudio` user by running `sudo su` command in the terminal session.
 
