@@ -17,7 +17,7 @@ git clone --branch=master --depth=1 https://github.com/igor71/R-Studio/
 
 cd R-Studio
 
-./tflow-build-all.sh
+./R-Build-All.sh
 ```
 
 ## Running RStudio Server Inside Docker Container ##
@@ -124,6 +124,11 @@ rstudio (or any other specific user(s)) can be added to the sudoers file (using 
 Once you are logged into web interface, you can add R packages by issuing following comman:
 
 `install.packages("<package-name"), e.g install.packages("tidyverse")`
+
+After packages installation need to save docker image so all packages will be available on next run:
+
+`docker commit <docker_id> yi/r-studio:<tag> ## tag can be 0.1, 0.2 and so on`
+
 
 ### Original WIKI and repos are here:
 
