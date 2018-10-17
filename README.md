@@ -9,12 +9,21 @@ Install the most current version of `docker` software [as indicated for your pla
 
 _**Note:** RStudio requires docker version `>= 1.2`_  Some Linux repositories may have only older versions available, to ensure you get the latest version run `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`. Fresh installs of the Docker Toolkit on Mac/Windows following the instructions above should be fine.  
 
-Linux users can just use `http://localhost` or the IP address of their remote server.  
+Linux users can just use `http://localhost` or the IP address of their remote server. 
 
-## Running RStudio Server ##
+## Building Docker Images Manually:
+```
+git clone --branch=master --depth=1 https://github.com/igor71/R-Studio/
+
+cd R-Studio
+
+./tflow-build-all.sh
+```
+
+## Running RStudio Server Inside Docker Container ##
 
 1) From the docker window, run:
-```bash
+```
 docker run -d -p 8787:8787 -e PASSWORD=<password> --name rstudio yi/r-studio:0.0 # replace <password> with a password of your choice
 ```
 _**Note:** Password cannot be same as username, `rstudio` docker will fail on run command in this case_
