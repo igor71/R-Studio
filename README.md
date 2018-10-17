@@ -17,7 +17,7 @@ Linux users can just use `http://localhost` or the IP address of their remote se
 ```bash
 docker run -d -p 8787:8787 -e PASSWORD=<password> --name rstudio yi/r-studio:0.0 # replace <password> with a password of your choice
 ```
-_Note: Password cannot be same as username, `rstudio` docker will fail on run command in this case_
+_**Note**: Password cannot be same as username, `rstudio` docker will fail on run command in this case_
 
 Linux users might want to add their user to the `docker` group to avoid having to use `sudo`.  To do so, just run `sudo usermod -a -G docker <username>`. You may need to login again to refresh your group membership.
 
@@ -66,7 +66,7 @@ You can now open a shell from RStudio (see the "Tools" menu), or directly from t
 
     system("sudo apt-get install -y libgsl0-dev")
 
-_Note that the `system()` commands are non-interactive, hence the `-y` flag to accept the install._
+_**Note** that the `system()` commands are non-interactive, hence the `-y` flag to accept the install._
 
 In the other hand you can become `root` if you are running docker as `rstudio` user by running `sudo su` command in the terminal session.
 
