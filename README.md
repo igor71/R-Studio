@@ -7,7 +7,7 @@ Here we outline how to use the rstudio image,  which enables you to use [RStudio
 
 Install the most current version of `docker` software [as indicated for your platform](https://docs.docker.com/installation). 
 
-_Note: RStudio requires docker version `>= 1.2`_  Some Linux repositories may have only older versions available, to ensure you get the latest version run `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`. Fresh installs of the Docker Toolkit on Mac/Windows following the instructions above should be fine.  
+_**Note**: RStudio requires docker version `>= 1.2`_  Some Linux repositories may have only older versions available, to ensure you get the latest version run `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`. Fresh installs of the Docker Toolkit on Mac/Windows following the instructions above should be fine.  
 
 Linux users can just use `http://localhost` or the IP address of their remote server.  
 
