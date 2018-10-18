@@ -125,6 +125,10 @@ Once you are logged into web interface, you can add R packages by issuing follow
 
 `install.packages("<package-name"), e.g install.packages("tidyverse")`
 
+Checking package capatibility:
+
+`capabilities()["tcltk"]`
+
 After packages installation need to save docker image so all packages will be available on next run:
 
 `docker commit <docker_id> yi/r-studio:<tag> ## tag can be 0.1, 0.2 and so on`
