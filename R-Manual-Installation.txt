@@ -34,7 +34,7 @@ options(repos = r)
 rm(r)
 
 
-sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libz-dev
+sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libz-dev libsm6 tk
 
 R
 
@@ -65,6 +65,9 @@ install.packages("fpc") - OK
 
 install.packages("stylo") - OK
 
+Checking package capatibility:
+
+capabilities()["tcltk"]
 
 https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image
 
